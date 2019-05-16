@@ -10,7 +10,7 @@
       username: "{{ aci_user }}"
       password: "{{ aci_password }}"
       tenant: Prod 
-      description: Production tenant see Nick
+      description: "{{ tenant_desc }}"
       state: present
       validate_certs: no
     delegate_to: localhost
