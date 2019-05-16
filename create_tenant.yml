@@ -20,3 +20,15 @@
     delegate_to: localhost
 
 
+  - name: Add a new VRF to a tenant
+    aci_vrf:
+      host: "{{ aci_url }}"
+      username: "{{ aci_user }}"
+      password: "{{ aci_password }}"
+      vrf: "{{ vrf }}"
+      tenant: "{{ tenant }}"
+      descr: "{{ vrf }}" VRF
+      policy_control_preference: enforced
+      policy_control_direction: ingress
+      state: present
+    delegate_to: localhost
