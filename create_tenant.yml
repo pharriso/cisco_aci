@@ -4,12 +4,16 @@
   connection: local
 
   tasks: 
+  - name: load variables
+    include_vars:
+      file: vars_files/{{ aci_tenant }}.yml
+
   - name: Add a new tenant
     aci_tenant:
       host: "{{ aci_url }}"
       username: "{{ aci_user }}"
       password: "{{ aci_password }}"
-      tenant: Prod 
+      tenant: "{{ tenant }}" 
       description: "{{ tenant_desc }}"
       state: present
       validate_certs: no
