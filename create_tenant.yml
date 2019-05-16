@@ -27,7 +27,7 @@
       password: "{{ aci_password }}"
       vrf: "{{ vrf }}"
       tenant: "{{ tenant }}"
-      descr: "{{ vrf_desc }}" VRF
+      descr: "{{ vrf_desc }} VRF"
       policy_control_preference: enforced
       policy_control_direction: ingress
       state: present
