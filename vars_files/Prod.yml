@@ -1,3 +1,5 @@
 ---
 tenant: Prod 
 tenant_desc: Prod Tenant see Nick_vars.
+vrf: vrf_dmz
+vrf_desc: this is not the real name
