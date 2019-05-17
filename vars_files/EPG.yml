@@ -5,4 +5,4 @@ vrf: vrf_pp_dmz
 vrf_desc: this is not the real name
 ap: Intranet
 epg: web_Intranet
-description: Test EPG
+epg_desc: Test EPG
