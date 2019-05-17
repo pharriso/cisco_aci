@@ -4,9 +4,9 @@
   connection: local
 
   tasks: 
-  - name: load variables
-    include_vars:
-      file: vars_files/{{ aci_tenant }}.yml
+  #- name: load variables
+  #  include_vars:
+  #    file: vars_files/{{ aci_tenant }}.yml
 
   - name: Add a new tenant
     aci_tenant:
