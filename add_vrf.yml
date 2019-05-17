@@ -34,6 +34,7 @@
       validate_certs: no
   delegate_to: localhost
 
+
   - name: Add a new EPG
     aci_epg:
       host: "{{ aci_url }}"
