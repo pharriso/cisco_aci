@@ -41,7 +41,7 @@
       username: "{{ aci_user }}"
       password: "{{ aci_password }}"
       tenant: "{{ tenant }}"
-      ap: "{{ ap }}"
+      ap: test
       epg: "{{ epg }}"
       description: "{{ epg_desc }} 
       bd: prod_bd
