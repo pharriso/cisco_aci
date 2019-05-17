@@ -3,3 +3,6 @@ tenant: Pre-Prod
 tenant_desc: Pre-Prod Tenant see Nick1_vars.
 vrf: vrf_pp_dmz
 vrf_desc: this is not the real name
+ap: Intranet
+epg: web_Intranet
+description: Test EPG
