@@ -33,3 +33,18 @@
       state: present
       validate_certs: no
 delegate_to: localhost
+
+- name: Add a new EPG
+  aci_epg:
+    host: "{{ aci_url }}"
+    username: "{{ aci_user }}"
+    password: "{{ aci_password }}"
+    tenant: "{{ tenant }}"
+    ap: "{{ ap }}"
+    epg: "{{ epg }}"
+    description: "{{ epg_desc }} 
+    bd: prod_bd
+    preferred_group: yes
+    state: present
+  delegate_to: localhost
+
